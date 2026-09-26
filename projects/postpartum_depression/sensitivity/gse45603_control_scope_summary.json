@@ -1,0 +1,14 @@
+{
+  "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45603",
+  "matrix_path_argument": "data/processed/postpartum_depression__GSE45603.pkl.gz",
+  "matrix_sha256": "06e9951093c1b74775f2204cb7d81afb7a754ae4d9d26f273145e6c19c555a48",
+  "case_people": 16,
+  "explicit_euthymic_people": 27,
+  "generic_control_people": 5,
+  "finite_gene_comparisons": 9744,
+  "sign_flip_count": 601,
+  "sign_flip_rate_of_nonzero_genes": 0.06168531253207431,
+  "broad_q_below_0_05": 0,
+  "strict_q_below_0_05": 0,
+  "caveat": "Prior GSE45603 outcomes already exposed. Broad versus strict is exploratory source-label sensitivity, not an independent test or new PPD biomarker."
+}
