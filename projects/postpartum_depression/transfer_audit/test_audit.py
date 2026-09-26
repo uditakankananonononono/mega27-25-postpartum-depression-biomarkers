@@ -82,3 +82,13 @@ def test_longitudinal_same_timepoint_is_not_a_pair(tmp_path):
     r = audit_longitudinal_methylation(p)
     assert not r['paired_sample_mapping_usable']
     assert 'nonunique_or_unpaired_visits' in r['errors']
+
+
+def test_generic_control_not_relabelled_euthymic():
+    r = audit('GSE45603')
+    assert r['source_condition_counts'] == {'condition: PPD': 16, 'condition: control': 5,
+                                            'condition: euthymic': 27}
+    assert len(r['control_not_explicitly_euthymic_GSM']) == 5
+    assert r['participant_independent_transfer_eligible']
+    assert not r['strict_euthymic_case_control_eligible']
+    assert 'broad_control_label_not_euthymic' in r['errors']

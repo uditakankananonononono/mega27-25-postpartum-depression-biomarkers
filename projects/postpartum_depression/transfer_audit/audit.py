@@ -46,6 +46,14 @@ def audit(study, path=None):
                 errors.append('non_postpartum_timepoint')
             if r.get('source_ssri', '').strip().lower() != 'ssri user_(yes/no): no':
                 errors.append('ssri_status_outside_design')
+    # Source phenotype labels are not synonyms. Five GSE45603 records marked
+    # "control" must not be silently folded into the 27 source "euthymic" women.
+    source_conditions = Counter(r.get('source_condition', '').strip() for r in rows) if study == 'GSE45603' else None
+    ambiguous_controls = sorted(r.get('gsm', '') for r in rows if study == 'GSE45603'
+                                and r.get('analysis_label') == 'control'
+                                and r.get('source_condition', '').strip() != 'condition: euthymic')
+    if ambiguous_controls:
+        errors.append('broad_control_label_not_euthymic')
     conflicting = sorted(k for k, labels in groups.items() if len(labels) > 1)
     if conflicting:
         errors.append('source_token_conflicting_labels')
@@ -71,8 +79,11 @@ def audit(study, path=None):
         'participant_independent_transfer_eligible': bool(person_field and not (set(errors) & hard)),
         'errors': sorted(set(errors)),
         'conflicting_source_tokens': conflicting,
+        'source_condition_counts': dict(sorted(source_conditions.items())) if source_conditions is not None else None,
+        'control_not_explicitly_euthymic_GSM': ambiguous_controls,
+        'strict_euthymic_case_control_eligible': bool(person_field and not (set(errors) & hard) and not ambiguous_controls),
         'conflicting_DE_prefixes_diagnostic_only': sorted(k for k, v in prefix_groups.items() if len(v) > 1),
-        'limitation': ('person tokens read from source crosswalk, no clinical endpoint verification' if person_field else
+        'limitation': ('person tokens read from source crosswalk; generic control differs from explicit euthymic, no clinical endpoint verification' if person_field else
                        'unique GSM/full library tokens are not a depositor patient crosswalk; no participant-level validation'),
     }
 

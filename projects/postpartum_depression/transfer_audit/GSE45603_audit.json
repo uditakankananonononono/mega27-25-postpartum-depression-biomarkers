@@ -3,11 +3,26 @@
   "conflicting_DE_prefixes_diagnostic_only": [],
   "conflicting_source_tokens": [],
   "control_libraries": 32,
-  "errors": [],
+  "control_not_explicitly_euthymic_GSM": [
+    "GSM1110484",
+    "GSM1110493",
+    "GSM1110498",
+    "GSM1110515",
+    "GSM1110539"
+  ],
+  "errors": [
+    "broad_control_label_not_euthymic"
+  ],
   "library_records": 48,
-  "limitation": "person tokens read from source crosswalk, no clinical endpoint verification",
+  "limitation": "person tokens read from source crosswalk; generic control differs from explicit euthymic, no clinical endpoint verification",
   "participant_independent_transfer_eligible": true,
   "person_key_status": "source_explicit_person_token",
+  "source_condition_counts": {
+    "condition: PPD": 16,
+    "condition: control": 5,
+    "condition: euthymic": 27
+  },
+  "strict_euthymic_case_control_eligible": false,
   "study": "GSE45603",
   "unique_GSM": 48,
   "unique_source_tokens": 48
