@@ -27,3 +27,11 @@ def test_unknown_or_duplicate_source_identity_blocks(tmp_path):
         w=csv.DictWriter(f,fieldnames=rows[0]);w.writeheader();w.writerows(rows)
     with pytest.raises(ValueError,match='duplicate GSM'):
         run(matrix,p,tmp_path)
+
+
+def test_cached_matrix_rebuilds_exactly_from_raw_geo():
+    from rebuild_gse45603 import rebuild
+    x=rebuild()
+    assert x['raw_matrix_shape']==[15456,210]
+    assert x['reconstructed_gene_shape']==[9744,48]
+    assert x['exact_gene_and_value_match']

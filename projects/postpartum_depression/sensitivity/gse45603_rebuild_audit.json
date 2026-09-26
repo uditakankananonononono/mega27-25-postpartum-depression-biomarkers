@@ -1,0 +1,26 @@
+{
+  "raw_matrix_shape": [
+    15456,
+    210
+  ],
+  "reconstructed_gene_shape": [
+    9744,
+    48
+  ],
+  "cached_shape": [
+    9744,
+    48
+  ],
+  "exact_gene_and_value_match": true,
+  "source_urls_and_sha256": {
+    "data/raw/matrix/GSE45603_series_matrix.txt.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE45nnn/GSE45603/matrix/GSE45603_series_matrix.txt.gz",
+      "sha256": "da120f052d21b45df26bc0c913cafc14839589ef7416f75579f854d1f1a9e931"
+    },
+    "data/raw/gpl/GPL10558.annot.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/annot/GPL10558.annot.gz",
+      "sha256": "c914fdbe1130906ce3b9c97f5a75280591c89c617c168fb687c641f683e76b45"
+    }
+  },
+  "processing_caveat": "Original max-mean probe selection used all 210 longitudinal samples, then selected 48 postpartum GSMs. This is a faithful reproduction of the exposed descriptive result, not train-only preprocessing for a prospective classifier."
+}
