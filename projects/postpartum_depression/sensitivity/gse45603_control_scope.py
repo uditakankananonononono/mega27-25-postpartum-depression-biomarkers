@@ -49,6 +49,8 @@ def run(matrix_path, crosswalk, output_dir):
     bq = bh_fdr(2*norm.sf(np.abs(b_z)));sq = bh_fdr(2*norm.sf(np.abs(s_z)))
     both_nonzero = (bg[valid]!=0) & (sg[valid]!=0)
     flips = both_nonzero & (np.sign(bg[valid]) != np.sign(sg[valid]))
+    robust_flips_01 = flips & (np.abs(bg[valid]) >= 0.1) & (np.abs(sg[valid]) >= 0.1)
+    robust_flips_02 = flips & (np.abs(bg[valid]) >= 0.2) & (np.abs(sg[valid]) >= 0.2)
     out = pd.DataFrame({'gene':matrix.index[valid], 'broad_g':bg[valid], 'broad_v':bv[valid],
                         'strict_g':sg[valid], 'strict_v':sv[valid], 'broad_q':bq,
                         'strict_q':sq, 'sign_flip':flips})
@@ -60,6 +62,8 @@ def run(matrix_path, crosswalk, output_dir):
         'case_people':len(cases), 'explicit_euthymic_people':len(euthymic),
         'generic_control_people':len(generic), 'finite_gene_comparisons':int(valid.sum()),
         'sign_flip_count':int(flips.sum()), 'sign_flip_rate_of_nonzero_genes':float(flips.sum()/both_nonzero.sum()),
+        'sign_flips_both_abs_g_at_least_0_1':int(robust_flips_01.sum()),
+        'sign_flips_both_abs_g_at_least_0_2':int(robust_flips_02.sum()),
         'broad_q_below_0_05':int((bq<.05).sum()), 'strict_q_below_0_05':int((sq<.05).sum()),
         'caveat':'Prior GSE45603 outcomes already exposed. Broad versus strict is exploratory source-label sensitivity, not an independent test or new PPD biomarker.'}
     (output_dir / 'gse45603_control_scope_summary.json').write_text(json.dumps(summary,indent=2)+'\n')

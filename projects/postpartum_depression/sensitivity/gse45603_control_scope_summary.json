@@ -8,6 +8,8 @@
   "finite_gene_comparisons": 9744,
   "sign_flip_count": 601,
   "sign_flip_rate_of_nonzero_genes": 0.06168531253207431,
+  "sign_flips_both_abs_g_at_least_0_1": 2,
+  "sign_flips_both_abs_g_at_least_0_2": 0,
   "broad_q_below_0_05": 0,
   "strict_q_below_0_05": 0,
   "caveat": "Prior GSE45603 outcomes already exposed. Broad versus strict is exploratory source-label sensitivity, not an independent test or new PPD biomarker."

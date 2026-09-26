@@ -14,6 +14,8 @@ def test_real_source_exploratory_result(tmp_path):
     assert (x['case_people'],x['explicit_euthymic_people'],x['generic_control_people']) == (16,27,5)
     assert x['finite_gene_comparisons'] == 9744
     assert x['sign_flip_count'] == 601
+    assert x['sign_flips_both_abs_g_at_least_0_1'] == 2
+    assert x['sign_flips_both_abs_g_at_least_0_2'] == 0
     assert x['broad_q_below_0_05'] == x['strict_q_below_0_05'] == 0
 
 
