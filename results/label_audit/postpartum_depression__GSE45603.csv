@@ -1,0 +1,21 @@
+text,label,count
+person#_#rdtrimester_euthymic_tempus | whole blood | condition: euthymic,DROP,28
+person#_postpartum_euthymic_tempus | whole blood | condition: euthymic,control,27
+person#_#sttrimester_euthymic_tempus | whole blood | condition: euthymic,DROP,22
+person#_#rdtrimester_alwaysdepressed_tempus | whole blood | condition: always depressed,DROP,18
+person#_postpartum_alwaysdepressed_tempus | whole blood | condition: always depressed,DROP,18
+person#_postpartum_ppd_tempus | whole blood | condition: ppd,case,16
+person#_#rdtrimester_ppd_tempus | whole blood | condition: ppd,DROP,15
+person#_#sttrimester_ppd_tempus | whole blood | condition: ppd,DROP,15
+person#_#sttrimester_alwaysdepressed_tempus | whole blood | condition: always depressed,DROP,14
+person#_preconception_euthymic_tempus | whole blood | condition: euthymic,DROP,9
+person#_preconception_ppd_tempus | whole blood | condition: ppd,DROP,7
+person#_#rdtrimester_control_tempus | whole blood | condition: control,DROP,5
+person#_postpartum_control_tempus | whole blood | condition: control,control,5
+person#_preconception_alwaysdepressed_tempus | whole blood | condition: always depressed,DROP,4
+person#_#ndtrimester_alwaysdepressed_tempus | whole blood | condition: always depressed,DROP,2
+person#_#ndtrimester_control_tempus | whole blood | condition: control,DROP,1
+person#_#sttrimesterna_tempus | whole blood | condition: na,DROP,1
+person#_#sttrimester_control_tempus | whole blood | condition: control,DROP,1
+person#_#rdtrimesterna_tempus | whole blood | condition: na,DROP,1
+person#_preconception_control_tempus | whole blood | condition: control,DROP,1

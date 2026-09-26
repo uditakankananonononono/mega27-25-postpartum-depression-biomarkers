@@ -1,0 +1,14 @@
+{
+  "case_libraries": 16,
+  "conflicting_DE_prefixes_diagnostic_only": [],
+  "conflicting_source_tokens": [],
+  "control_libraries": 32,
+  "errors": [],
+  "library_records": 48,
+  "limitation": "person tokens read from source crosswalk, no clinical endpoint verification",
+  "participant_independent_transfer_eligible": true,
+  "person_key_status": "source_explicit_person_token",
+  "study": "GSE45603",
+  "unique_GSM": 48,
+  "unique_source_tokens": 48
+}

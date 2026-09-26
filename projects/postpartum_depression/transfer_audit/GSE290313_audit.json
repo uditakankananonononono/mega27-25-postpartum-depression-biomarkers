@@ -1,0 +1,32 @@
+{
+  "case_libraries": 35,
+  "conflicting_DE_prefixes_diagnostic_only": [
+    "DE03",
+    "DE08",
+    "DE15",
+    "DE21",
+    "DE30",
+    "DE35",
+    "DE37",
+    "DE43",
+    "DE46",
+    "DE47",
+    "DE69",
+    "DE73",
+    "DE77",
+    "DE78",
+    "DE96"
+  ],
+  "conflicting_source_tokens": [],
+  "control_libraries": 84,
+  "errors": [
+    "DE_prefix_conflicting_labels_not_person_key"
+  ],
+  "library_records": 119,
+  "limitation": "unique GSM/full library tokens are not a depositor patient crosswalk; no participant-level validation",
+  "participant_independent_transfer_eligible": false,
+  "person_key_status": "unverified_library_only",
+  "study": "GSE290313",
+  "unique_GSM": 119,
+  "unique_source_tokens": 119
+}

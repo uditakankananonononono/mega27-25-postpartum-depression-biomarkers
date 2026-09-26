@@ -1,0 +1,490 @@
+Skeptical ISEF judge/methodologist review
+Strongest technical/design weakness
+
+The core failure is not the model choice; it is the absence of a defensible discovery-to-validation chain with independent biological units.
+
+The project currently attempts to answer a diagnostic biomarker question (“can blood expression/methylation identify postpartum depression?”), but the available evidence structure cannot support that claim.
+
+The main methodological problem is:
+
+The project has repeatedly risked converting already-selected, already-known, or non-independent public cohorts into apparent validation/discovery sets without proving independence at the participant level.
+
+For a biomarker project, the hierarchy should be:
+
+Independent participant-level discovery cohort
+
+Predefined biomarker selection rule
+
+Locked model
+
+Independent participant-level validation cohort
+
+Comparison against an appropriate same-task baseline
+
+The current design lacks step 4 and has unresolved concerns around step 1/2.
+
+Specific failure points:
+
+GSE45603 is too small for a novel diagnostic biomarker claim. A discovery signal from 16 cases vs 32 controls can generate hypotheses, but it is highly vulnerable to:
+
+cohort-specific immune/stress effects,
+
+batch effects,
+
+postpartum timing differences,
+
+overfitting.
+
+GSE290313 cannot function as an untouched validation cohort because:
+
+it was previously used in selection/splitting,
+
+the preregistration incorrectly characterized it as independent,
+
+participant/library independence is unresolved.
+
+This is a fatal issue for a claimed prospective validation.
+
+The methylation analysis demonstrates a classic biomarker trap:
+
+internally optimistic leave-one-person-out performance,
+
+reversal under clinically relevant stratification,
+
+no external validation.
+
+That pattern suggests the signal may represent cohort structure or phenotype definition rather than a robust biomarker.
+
+The “benchmark-winning” objective is currently impossible to judge because there is no verified:
+
+locked test set,
+
+comparable published benchmark,
+
+same endpoint,
+
+same population,
+
+same preprocessing.
+
+A stronger project would stop trying to rescue a diagnostic biomarker claim from these cohorts and redirect toward a question where public data can genuinely answer something.
+
+Ranked redirection options
+
+Ranking criterion:
+
+Data feasibility
+
+Scientific value
+
+Probability of producing a valid ISEF-level computational study
+
+Option 1 (highest feasibility): Mechanistic postpartum depression biology instead of diagnostic prediction
+Research question
+
+“Which biological pathways show reproducible alteration across independent postpartum depression transcriptomic datasets, and are these alterations specific to postpartum depression versus general depression/stress signatures?”
+
+This changes the claim from:
+
+“I discovered a diagnostic biomarker”
+
+to:
+
+“I identify reproducible biological programs associated with postpartum depression.”
+
+That is scientifically more defensible.
+
+Data-source criteria
+
+Required:
+
+Multiple independent postpartum depression transcriptomic datasets.
+
+Clearly documented:
+
+patient-level metadata,
+
+postpartum timing,
+
+diagnosis criteria,
+
+tissue type,
+
+platform.
+
+Possible sources:
+
+GEO/ArrayExpress datasets, but every candidate would require manual depositor metadata verification.
+
+Do not use:
+
+datasets already involved in feature selection,
+
+datasets without participant-level metadata.
+
+Patient unit
+
+Preferred:
+
+one participant = one biological sample.
+
+Avoid:
+
+treating GSM libraries as independent patients unless depositor metadata proves this.
+
+Leakage checks
+
+Must preregister:
+
+no gene ranking before validation dataset selection,
+
+no pathway selection from validation data,
+
+no threshold tuning on validation samples,
+
+batch correction performed without label leakage.
+
+Published baseline
+
+Candidate baseline to locate and verify:
+
+prior postpartum depression transcriptomic meta-analysis studies.
+
+Do not claim superiority unless:
+
+identical endpoint,
+
+identical tissue,
+
+comparable sample definition.
+
+Discovery opportunity
+
+Potential discoveries:
+
+conserved biological modules,
+
+pathway convergence,
+
+cell-type-associated signals,
+
+postpartum-specific versus depression-general patterns.
+
+This is a real discovery question because it asks why the disease state appears biologically different.
+
+Falsification
+
+The project fails if:
+
+no pathway replicates across datasets,
+
+signals disappear after batch correction,
+
+findings are indistinguishable from general major depression signatures.
+
+Preregistration feasibility
+
+Yes.
+
+Strong candidate.
+
+Option 2: Build a benchmarked computational method, not a biomarker
+Research question
+
+“Can a leakage-resistant machine-learning framework improve robustness of postpartum depression classification under cross-study transfer?”
+
+The novelty becomes methodological.
+
+Example:
+
+Train:
+
+Dataset A
+
+Test:
+
+Dataset B
+
+No feature tuning after seeing test labels.
+
+Data-source criteria
+
+Need:
+
+≥2 independent datasets,
+
+same biological modality,
+
+compatible phenotype definition.
+
+If this cannot be found, abandon prediction.
+
+Patient unit
+
+Participant-level only.
+
+Libraries cannot be treated as patients.
+
+Leakage checks
+
+Mandatory:
+
+preprocessing fitted only on training data,
+
+feature selection only in training folds,
+
+nested cross-validation,
+
+no repeated samples across folds.
+
+Published baseline
+
+Need to locate:
+
+published postpartum depression classification models using the same modality.
+
+Do not assume a baseline exists.
+
+If none exists:
+
+define internal baselines:
+
+logistic regression,
+
+elastic net,
+
+random forest,
+
+simple neural model.
+
+But then do not claim “beats the literature.”
+
+Discovery opportunity
+
+Possible contribution:
+
+showing that certain preprocessing/model choices generalize or fail.
+
+This is valuable but less biologically novel.
+
+Falsification
+
+Fails if:
+
+complex models do not outperform simple baselines,
+
+performance collapses cross-study.
+
+A null result could still be publishable if rigorously demonstrated.
+
+Preregistration feasibility
+
+Yes.
+
+Option 3: Biomarker discovery through multi-omic integration (highest risk/highest value)
+Research question
+
+“Can integrated transcriptomic and epigenomic features identify biological states associated with postpartum depression that are not captured by single-marker approaches?”
+
+Data-source criteria
+
+Need:
+
+matched participants with:
+
+expression,
+
+methylation,
+
+phenotype.
+
+This is the limiting factor.
+
+Patient unit
+
+Participant-level matched samples only.
+
+No combining unrelated cohorts as if paired.
+
+Leakage checks
+
+Critical:
+
+multi-omic feature selection must occur inside training folds.
+
+no selecting CpGs/genes based on all participants.
+
+Published baseline
+
+To locate:
+
+published multi-omic depression/postpartum depression classifiers.
+
+Need verification before comparison.
+
+Discovery opportunity
+
+Potential:
+
+biological networks rather than individual markers.
+
+Examples:
+
+regulatory modules,
+
+coordinated gene-methylation patterns.
+
+Falsification
+
+Fails if:
+
+integration only improves internal validation,
+
+methylation/transcript signals do not replicate,
+
+performance depends on cohort identity.
+
+Preregistration feasibility
+
+Yes, but only after confirming data availability.
+
+Option 4 (scientifically interesting but currently blocked): Prospective biomarker validation
+Research question
+
+“Does a predefined blood biomarker panel predict future postpartum depression onset before diagnosis?”
+
+This is closest to the original ambition.
+
+Data-source criteria
+
+Requires:
+
+samples collected before diagnosis,
+
+longitudinal follow-up,
+
+independent cohort.
+
+Current status
+
+Based on the described search:
+
+No usable public validation source has been identified.
+
+Patient unit
+
+Must be:
+
+individual mother,
+
+pre/post diagnosis timeline.
+
+Leakage checks
+
+Must prevent:
+
+using post-diagnosis expression,
+
+symptom-defined cohorts masquerading as prediction.
+
+Published baseline
+
+To locate.
+
+Discovery opportunity
+
+Very high.
+
+Falsification
+
+If no prediagnostic signal exists.
+
+Preregistration feasibility
+
+Technically yes.
+
+Practically blocked until a cohort exists.
+
+Ranking
+Rank	Direction	Data feasibility	Scientific value	ISEF defensibility
+1	Mechanistic pathway/meta-analysis	High	High	High
+2	Cross-study ML robustness benchmark	Medium-high	Medium-high	High
+3	Multi-omic integration	Medium-low	Very high	Medium
+4	True predictive biomarker	Low	Very high	Currently infeasible
+Can the current project satisfy both demands?
+
+The two demands are:
+
+Benchmark win
+
+Novel biomarker discovery
+
+Based on the stated constraints:
+
+No. Not currently on public data.
+
+The missing ingredient is not another algorithm. It is an independent, clinically appropriate validation structure.
+
+A more complex model on the existing cohorts would likely create a stronger-looking but weaker scientific claim.
+
+Questions requiring original depositor/author clarification
+
+These are the questions I would require before allowing any biomarker claim:
+
+GSE45603
+
+Were all participants unique individuals?
+
+What exact diagnostic instrument defined PPD?
+
+What postpartum time window was used?
+
+Were controls screened for prior depression or current symptoms?
+
+Were RNA extraction, sequencing, and processing batches balanced?
+
+GSE290313
+
+Does each GSM correspond to a unique participant?
+
+Is there a participant-to-library mapping?
+
+Were any individuals represented by multiple libraries?
+
+Were symptoms-only postpartum participants diagnosed clinically or selected by questionnaire thresholds?
+
+Were these samples previously used in any published analysis/model development?
+
+Methylation cohort
+
+Are CpG sites chosen a priori or discovered from the same cohort?
+
+Were mood strata predefined?
+
+Were any preprocessing parameters estimated using all samples?
+
+Is there independent validation?
+
+All cohorts
+
+Are ethnicity, medication status, parity, age, postpartum timing, and batch distributions comparable?
+
+Are there hidden duplicate samples?
+
+Are phenotype labels harmonized?
+
+Recommended reset
+
+If this were entering an ISEF review round, I would require the team to rewrite the central hypothesis from:
+
+“We will discover a diagnostic postpartum depression biomarker.”
+
+to one of:
+
+“We will identify reproducible biological programs associated with postpartum depression.”
+
+“We will test whether machine-learning biomarkers generalize across postpartum depression cohorts.”
+
+“We will quantify why existing postpartum depression biomarkers fail to transfer.”
+
+Those are narrower, but they are scientifically testable with public data. The original diagnostic-biomarker claim currently exceeds what the available evidence can support.

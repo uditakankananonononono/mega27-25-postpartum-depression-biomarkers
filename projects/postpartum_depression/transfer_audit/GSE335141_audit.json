@@ -1,0 +1,14 @@
+{
+  "clinical_table_denominator_status": "unresolved_preprint_37_vs_series_41",
+  "errors": [],
+  "external_validation_status": "not_established_same_cohort_as_published_analysis",
+  "limitation": "GEO sample titles and characteristics supply paired tokens, not endpoint timing, clinical covariates, or an independent validation cohort",
+  "paired_sample_mapping_usable": true,
+  "source_PPD_person_tokens": 17,
+  "source_healthy_person_tokens": 24,
+  "source_paired_T0_T4": 41,
+  "source_person_tokens": 41,
+  "specimen_records": 82,
+  "study": "GSE335141",
+  "unique_GSM": 82
+}

@@ -1,0 +1,7 @@
+cohort,gene,published_direction,measured,g,se,same_sign
+GSE45603,FOLR3,down,True,-0.020054,0.3061927497508718,True
+GSE45603,TNNT1,up,False,,,
+GSE45603,MMP1,up,False,,,
+GSE290313-PP,FOLR3,down,True,-0.038963,0.14777009169652702,True
+GSE290313-PP,TNNT1,up,True,0.05633,0.14778700890132393,True
+GSE290313-PP,MMP1,up,False,,,

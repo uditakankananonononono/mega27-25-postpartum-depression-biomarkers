@@ -1,0 +1,52 @@
+accession,source,role
+GSE290313,GEO series,postpartum_depression:validation (RNA-seq)
+GSE45603,GEO series,postpartum_depression:discovery
+MONDO_0005929,Open Targets disease associations,known genes postpartum_depression
+GSM1110359,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110363,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110366,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110372,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110374,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110378,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110380,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110388,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110392,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110394,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110397,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110400,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110403,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110409,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110412,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110416,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110424,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110429,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110433,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110438,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110442,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110446,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110447,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110451,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110461,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110462,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110466,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110473,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110477,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110479,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110484,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110491,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110493,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110498,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110505,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110506,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110508,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110511,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110515,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110518,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110525,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110534,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110539,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110547,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; case; one verified person per GSM
+GSM1110553,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110555,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110561,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM
+GSM1110564,GEO individual sample SOFT and analyzed GPL10558 series matrix,postpartum_depression:GSE45603 postpartum PPD versus euthymic/control expression used; control; one verified person per GSM

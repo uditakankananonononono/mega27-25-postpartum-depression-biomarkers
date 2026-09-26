@@ -1,0 +1,285 @@
+{
+  "schema": "migration-plan-v1",
+  "disease": "postpartum_depression",
+  "proposed_repo": "mega27-25-postpartum-depression-biomarkers",
+  "source_shared_repository": "uditakankananonononono/mega27-25-biomarkers-underserved-diseases",
+  "source_commit": "d2284557dc5c515cef9ffc13b7df774508b8211e",
+  "tracked_files": [
+    {
+      "shared_repo_path": "projects/postpartum_depression/GSE335141_PRIOR_ART_AND_SOURCE_HOLD.md",
+      "sha256": "87fb671c07751eea8ee3733db12b49fe5b6459f28a2e96f355e322e47ec6aea8",
+      "bytes": 3895
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/NOVELTY_PLAN.md",
+      "sha256": "f4ce4a1cece48f62d67bbb37d1528e25429be5a2d515e08b838cf02e27fcf73d",
+      "bytes": 2542
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/README.md",
+      "sha256": "e3b79cbe29a45d80bda5d00155b4abb57dd89d83c2c2f21d585dd4b75e97d57f",
+      "bytes": 4586
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/01_assessment.md",
+      "sha256": "398d33f72a3221a3218b73767900266232b2994cbad37e4606c6a96590f7629e",
+      "bytes": 2937
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/01_prompt.txt",
+      "sha256": "782f0555a00cf7d5920dd243a4497b77c267ed7b24f6f35bd503b9e0576cbacf",
+      "bytes": 2486
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/01_response.txt",
+      "sha256": "908509a04013a6b146e8a9eef6961f41375b51133128191f6441bcd2eeb0c63c",
+      "bytes": 10761
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/01_source_followup.md",
+      "sha256": "2eacc7c8bdf0aa11bbde68edc44c70137cb40198797fd0d51dbda102ffbea533",
+      "bytes": 2072
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/01_source_followup_addendum.md",
+      "sha256": "b1928279d85f6d432cac2b218827af65c7f6d4d18350b6696ad95708b75d5083",
+      "bytes": 1375
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/02_chatgpt_assessment.md",
+      "sha256": "8df43b1075a7a0a3ffbda01d0e29786335ce2c39de316202389a0c43cd8d3588",
+      "bytes": 3119
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/02_chatgpt_response.txt",
+      "sha256": "3e8075d595c682314a4da264f31790c496404f3dc86c403baf50555e6c656d27",
+      "bytes": 8709
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/02_deepseek_prompt.txt",
+      "sha256": "361b530abd1b70147ef0b64011ff8f211d2b5a1149b7c2a944f40b1c374f8830",
+      "bytes": 2784
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/02_deepseek_status.md",
+      "sha256": "2eb9a0526e039d63af468bd46129461560c1fa529203e5ffc179f5c18f81e65f",
+      "bytes": 464
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/judge_rounds/02_prompt.txt",
+      "sha256": "3b474604be3be53bcf2a72183d7b3f7d1c00466630025dd2c42f23b6ff06f021",
+      "bytes": 3194
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/sources/GSE290313_used_sample_crosswalk.csv",
+      "sha256": "94bf85dd9399a0f5a389d906f683ca9216b16bf58a8f64df3fe30a653f6a9d9a",
+      "bytes": 41973
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/sources/GSE335141_sample_crosswalk.csv",
+      "sha256": "e3a8e58673c310e4bb7398ca1784f0e83ea507e60a1e7bdac79dd193d7f52fa4",
+      "bytes": 27020
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/sources/GSE335141_series_soft.txt",
+      "sha256": "ccf7bf46195ef9048bb262c038498a764426a12239dcd40a26baed1e0163c759",
+      "bytes": 5527
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/sources/GSE45603_used_sample_crosswalk.csv",
+      "sha256": "6f5d37dc0d27fca94a54412a1f9d03d9d8cec47d6a76654166e06a003b1e274b",
+      "bytes": 13429
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/sources/screened_sources.csv",
+      "sha256": "85d924115b0e656f0db6a1b227a05a65dc1747ff9110a41936e3658bbe647b82",
+      "bytes": 530
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/transfer_audit/GSE290313_audit.json",
+      "sha256": "1c8e9ddd78b0242afcd3dc35596d7fea329f4692fad2a6b6951ad75947f00890",
+      "bytes": 716
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/transfer_audit/GSE335141_audit.json",
+      "sha256": "3a6562d89ecb45b3934293981294939f4b73f90cd0bf5d8f36959a1235c73842",
+      "bytes": 580
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/transfer_audit/GSE45603_audit.json",
+      "sha256": "45ac0099fe0bc9b61497549950e30b78a1e22192005f6bd67110da19635a7b68",
+      "bytes": 455
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/transfer_audit/README.md",
+      "sha256": "139f4c9b9d302bea00e5e2159a40ec98254ff124c96a61308cb8b89746fc1264",
+      "bytes": 2544
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/transfer_audit/audit.py",
+      "sha256": "4f8716b4a18ab6cf7a8115df6c6dd6daac19b38afdc9aaa138cf3db8203434a1",
+      "bytes": 6775
+    },
+    {
+      "shared_repo_path": "projects/postpartum_depression/transfer_audit/test_audit.py",
+      "sha256": "5be010a7ab3f8de578d024f80cc06336921170f6bacd75a5e034f268c84c7a2b",
+      "bytes": 4192
+    },
+    {
+      "shared_repo_path": "results/external/ppd_new_methylation_context.json",
+      "sha256": "de0fe2e58c9f05952f4f4f8d818174ae808c7a77b9767f2b02bd33b2d66fc9d0",
+      "bytes": 1761
+    },
+    {
+      "shared_repo_path": "results/label_audit/postpartum_depression__GSE45603.csv",
+      "sha256": "d264952949a6e88db2b0a91d09ea3a93690ef67bde93834ada7516ad573ebef9",
+      "bytes": 1627
+    },
+    {
+      "shared_repo_path": "results/meta_discovery/postpartum_depression.csv.gz",
+      "sha256": "bdf58f2e14290f9bd13d3f78692c1556c8803201a5f46399edca812429e706be",
+      "bytes": 153146
+    },
+    {
+      "shared_repo_path": "results/ppd_published_gene_context.csv",
+      "sha256": "4f5deefd9f06138cd13b375f68839351198d42c178c2cd1447f05e54ec35f4ff",
+      "bytes": 322
+    },
+    {
+      "shared_repo_path": "results/prio/benchmark_postpartum_depression.csv",
+      "sha256": "05b19c87b788aeb4837cea54603c1ec3976a69d56093ea530d6b16ea147871c3",
+      "bytes": 5322
+    },
+    {
+      "shared_repo_path": "results/prio/benchmark_postpartum_depression_corrected.csv",
+      "sha256": "c9c6ad84c022203c4c8b691acf31cc8b8fa09fa72e021ea00a216e9bd4f44a4b",
+      "bytes": 5160
+    },
+    {
+      "shared_repo_path": "results/prio/benchmark_postpartum_depression_corrected_summary.json",
+      "sha256": "fd339206f5ddce959fee705af6e25e5a3a9c37862eb28608b24a47a3ecd26b88",
+      "bytes": 1258
+    },
+    {
+      "shared_repo_path": "results/prio/candidates_postpartum_depression.csv",
+      "sha256": "fc78812553c4be3a5ce4c1e8b71bb88928304046290dfe4f1ad2406f9defd587",
+      "bytes": 42
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed0_fold0.csv",
+      "sha256": "53e0e4c79383dcba932a256025bc08f4c7697412fa962c9e97b3a89afd5c327d",
+      "bytes": 572
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed0_fold1.csv",
+      "sha256": "2370c5a4c73cada4678706423a6c55a9df6b94fd92637edfff17e1b9e043e45d",
+      "bytes": 570
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed0_fold2.csv",
+      "sha256": "a42af7e6db4ada4e296fd26fc70fda6102cb280be8528a93fc3763a450f7b47e",
+      "bytes": 571
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed0_fold3.csv",
+      "sha256": "df7224277ccea38abb43d71239470f1f35affaeb4c67292a1b076c98d5951e9d",
+      "bytes": 567
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed0_fold4.csv",
+      "sha256": "0b8e7f07e8a7ca8df4a15a95d0d4bf2c1a90732466dca0a4fc8531c490da4682",
+      "bytes": 571
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed1_fold0.csv",
+      "sha256": "5346a9b4ea74bc5c117e53429c8032d831e572b4773f92dad816e500e3c64bbd",
+      "bytes": 569
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed1_fold1.csv",
+      "sha256": "883009dce365c5715ceba700061b75bbf724e346d219cb5830885c1489fd06ec",
+      "bytes": 570
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed1_fold2.csv",
+      "sha256": "06257e9bb3ffd68560e9b5300ce537925ff505b25e7810c6c69a97aef86a9147",
+      "bytes": 569
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed1_fold3.csv",
+      "sha256": "368f49cbb998c6fa56fe32cf22639c0b651ab02a8c4276eb103c5ab885823674",
+      "bytes": 567
+    },
+    {
+      "shared_repo_path": "results/prio/corrected_shards/postpartum_depression_seed1_fold4.csv",
+      "sha256": "b86a0294983b455d488908d4dec18bfb741c363b14e93cb274c299f1506c78a0",
+      "bytes": 567
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE290313-PP.csv.gz",
+      "sha256": "2218bc0aad47b9bd2c38ccb3d9e406dfaca6bce4f03fb9c9da26e890c7c308d7",
+      "bytes": 105231
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE290313-PP.labels.csv",
+      "sha256": "e667eb32fd373408851376d97ec47b67324b406b7406abf2a2a412b97794012c",
+      "bytes": 4652
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE290313-PRED.csv.gz",
+      "sha256": "313082a4c726ee16d3a8adacd1bb95b830b1a075564ae026bc6ad0a7a999854a",
+      "bytes": 111378
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE290313-PRED.labels.csv",
+      "sha256": "2db8bbec1d1fc829e79fdd1e3ec1d9981ea2f8e392239533f9c716cf91db3201",
+      "bytes": 4098
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE290313.csv.gz",
+      "sha256": "7aa9d5176b655f861eba1d3caef2d0e5b47595bb035bced53b37b8723a1cd8d9",
+      "bytes": 259541
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE290313.labels.csv",
+      "sha256": "056347aca8b6c58390b0f7efa978372585f50eb5cb409f0be135c86c745b04c2",
+      "bytes": 19768
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE45603.csv.gz",
+      "sha256": "eff75b52f1f0165767e977aac6744e48db4d5911c321fa0ccbc73e635d17d399",
+      "bytes": 99259
+    },
+    {
+      "shared_repo_path": "results/series/postpartum_depression__GSE45603.labels.csv",
+      "sha256": "81865acaa9e28a5e2c8868fedaf79245fa57485f55154e33693ab5ce0036641b",
+      "bytes": 2818
+    },
+    {
+      "shared_repo_path": "scripts/ppd_literature_sign_check.py",
+      "sha256": "de821fd2f265b31052bc72f06e5b577e89e3eece6c9db71e9bb29f5d5ad9ca94",
+      "bytes": 879
+    },
+    {
+      "shared_repo_path": "scripts/process_ppd_gse290313.py",
+      "sha256": "0db6b0b7b813b4c6eed93af990e506159512fe10320a6557083fd89fe29c87bf",
+      "bytes": 2612
+    }
+  ],
+  "explicitly_excluded": [
+    "untracked files",
+    "modified tracked files not represented by source commit",
+    "other-disease results",
+    "shared manuscript until disease-specific content can be verified"
+  ],
+  "accession_manifest": {
+    "source": "results/dataset_manifest.csv",
+    "matching_rule": "disease string in role field, not proof of independent datasets",
+    "matching_record_count": 51,
+    "GSE_count": 2,
+    "GSM_count": 48,
+    "other_count": 1
+  },
+  "deployment_status": "planning_only_no_repos_verified",
+  "method": "copy and verify hashes from source_commit Git tree, not dirty working tree; preserve project-relative paths; pin shared core; then run project-specific tests and read back remote"
+}

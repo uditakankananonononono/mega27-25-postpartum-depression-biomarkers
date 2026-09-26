@@ -1,0 +1,47 @@
+{
+  "source": "results/prio/benchmark_postpartum_depression_corrected.csv",
+  "n_gene_fold_splits": 10,
+  "n_graph_genes": 15809,
+  "npos": 25,
+  "means": {
+    "gcn": {
+      "auroc": 0.6937031374140713,
+      "auprc": 0.00591973042725329
+    },
+    "logreg": {
+      "auroc": 0.581668136031022,
+      "auprc": 0.01199727592996345
+    },
+    "meta_abs_z": {
+      "auroc": 0.4759442452505607,
+      "auprc": 0.00303952989707126
+    },
+    "mlp": {
+      "auroc": 0.5361025150619884,
+      "auprc": 0.00577135962113334
+    },
+    "rwr": {
+      "auroc": 0.8033412401997211,
+      "auprc": 0.02750080504735176
+    },
+    "sage": {
+      "auroc": 0.6551869224163577,
+      "auprc": 0.00722495033834962
+    },
+    "sage_rwr": {
+      "auroc": 0.7957980475118562,
+      "auprc": 0.025484729478801472
+    }
+  },
+  "paired_gcn_minus_rwr": {
+    "auroc": {
+      "mean_difference": -0.1096381027856499,
+      "wins": 0
+    },
+    "auprc": {
+      "mean_difference": -0.02158107462009847,
+      "wins": 0
+    }
+  },
+  "caveat": "Current Open Targets non-expression evidence proxy labels with 25 positives in 15,809-gene transductive graph, two seeded repetitions of five folds, no published temporal benchmark and no patient-level postpartum depression accuracy."
+}

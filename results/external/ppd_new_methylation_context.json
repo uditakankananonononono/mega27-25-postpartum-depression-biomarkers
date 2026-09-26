@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-09-25",
+  "geo": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE335141",
+  "public_release": "2026-09-22",
+  "series_design": "17 DSM-5 PPD, 24 healthy controls, two repeated whole-blood EPICv2 methylation assays per mother at T0 (<6 days after birth) and T4 (12 weeks), 82 GSMs nested in 41 mothers",
+  "matrix": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE335nnn/GSE335141/suppl/GSE335141_GEO_Upload_normalized_beta_matrix.tsv.gz",
+  "matrix_status": "589 MB gzipped beta matrix; only column header and small metadata-independent prefix checked. No PPD-control methylation effects computed. Not counted in manifest.",
+  "paper": "https://doi.org/10.64898/2026.04.03.716376",
+  "paper_index": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.64898%2F2026.04.03.716376&format=json&resultType=core",
+  "indexed_abstract": "Wolff et al. report no epigenome-wide significant CpG in direct case-control contrasts; name FKBP5 and AVP in longitudinal consistency analyses. Full preprint not fetched due biorxiv 429 and Europe PMC fullTextXML 500.",
+  "interpretation": "The cohort is independent of previous GEO expression deposits but is not an untouched marker discovery of already published loci, and methylation is not expression validation. Do not infer no other PPD data exist.",
+  "other_sources": [
+    {
+      "url": "https://doi.org/10.1038/s41598-018-28509-4",
+      "finding": "2018 PBMC case-control study, 10 pairs sequenced in its methods; full-text Europe PMC XML searched, no accession found."
+    },
+    {
+      "url": "https://doi.org/10.1038/s41398-021-01270-5",
+      "finding": "2021 blood gene-expression study; full-text Europe PMC XML searched, no GSE/PRJNA accession found."
+    }
+  ]
+}

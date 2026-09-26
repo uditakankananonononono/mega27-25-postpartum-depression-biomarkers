@@ -1,0 +1,2 @@
+accession,source_url,assay,source_sample_records,independent_people,source_qualification,manifest_used_records,reason_not_counted,checked_date
+GSE335141,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE335141,whole-blood EPICv2 DNA methylation,82,41,source-reported 17 PPD and 24 controls at two timepoints,0,"Series SOFT fetched and 82 unique GSM identifiers verified; normalized beta matrix not analyzed; methylation cannot be counted as expression-model validation; nested specimens are not independent people",2026-09-25
