@@ -7,7 +7,8 @@ def load(accession):
 def check():
  old=list(csv.DictReader((P.parents[1]/'results/disease_tagged_accession_manifest.csv').open(newline='')))
  used=[r for r in old if 'postpartum_depression' in r['role']]
- assert len(used)==51, ('expression baseline changed, re-audit this report',len(used))
+ assert len(used)==170, ('expression provenance inventory changed, re-audit this report',len(used))
+ assert sum(x['accession'].startswith('GSM') and 'P6 GSE290313 expression-used' in x['role'] for x in used)==119
  ledger=list(csv.DictReader((S/'methylation_used_record_manifest.csv').open(newline='')))
  assert len(ledger)==139 and len({x['accession'] for x in ledger})==139
  assert len({x['accession'] for x in ledger} & {x['accession'] for x in used})==0
@@ -40,5 +41,5 @@ def check():
    assert all(x['matrix_column'] for x in rows)
    assert summary['analyzed_case']==17 and summary['analyzed_control']==24
    assert summary['matrix_columns']==82
- print('Verified expression baseline: 51; methylation provenance GSMs: 137 in two GSEs; source person tokens: 51 + 41; branch-summary FDR-positive probes: 0 + 0 (not numerically rerun here).')
+ print('Verified expression provenance: 170 (119 used GSE290313 libraries without donor keys); methylation provenance GSMs: 137 in two GSEs; source person tokens: 51 + 41; branch-summary FDR-positive probes: 0 + 0 (not numerically rerun here).')
 if __name__=='__main__':check()
