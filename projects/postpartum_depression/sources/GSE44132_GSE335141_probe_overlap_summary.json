@@ -1,0 +1,9 @@
+{
+  "GSE44132_probes": 483266,
+  "GSE335141_probes": 880068,
+  "exact_probe_id_overlap": 0,
+  "canonical_cg_overlap": 382794,
+  "GSE44132_cg": 480143,
+  "GSE335141_cg": 874174,
+  "interpretation": "Canonical cg prefix match is a candidate coordinate only. EPICv2 suffixes, probe design and array chemistry require platform-manifest alignment; it is not a harmonized validation cohort."
+}

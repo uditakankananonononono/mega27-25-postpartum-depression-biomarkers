@@ -1,0 +1,21 @@
+{
+  "series": "GSE44132",
+  "matrix_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE44nnn/GSE44132/matrix/GSE44132_series_matrix.txt.gz",
+  "matrix_sha256": "b2d715ec45c250426c8b2a4e5317bf589f581f8425d1101d9f6d752ba6dc19b9",
+  "matrix_columns": 55,
+  "GSM_records": 55,
+  "distinct_patient_tokens": 51,
+  "analysis_unit": "one person, antenatal draw; technical PR01-084 controls excluded",
+  "analyzed_case": 23,
+  "analyzed_control": 27,
+  "probes_seen": 483266,
+  "probes_complete_finite_beta": 483266,
+  "probes_tested": 483266,
+  "fdr_0.05": 0,
+  "top_probe": [
+    "cg03873153",
+    -0.08122824261283823,
+    8.963911656161004e-07
+  ],
+  "caveat": "Exploratory in-cohort probe differences only; no held-out clinical prediction, no cross-study methylation validation, no new disease marker claim."
+}

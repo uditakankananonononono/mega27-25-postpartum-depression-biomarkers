@@ -1,0 +1,19 @@
+{
+  "study": "GSE335141",
+  "matrix_sha256": "13002634be22d3b58529402b07b89a57610479f18f3208ebd8ce94c6fc12b5b2",
+  "people": 41,
+  "paired_draws_per_person": 2,
+  "ppd_people": 17,
+  "healthy_people": 24,
+  "tested_probes": 880068,
+  "complete_finite_probes": 880068,
+  "all_probes": 880068,
+  "fdr_below_0.05": 0,
+  "top_probe": [
+    "cg16142867_BC21",
+    -0.05023576145626464,
+    1.8973999975696844e-07
+  ],
+  "endpoint": "between-group difference in within-person T4-T0 beta change",
+  "limitations": "Exploratory, unadjusted for cell counts, medication, array batch and clinical confounding; T4 is post-outcome and not predictive. No independent replication."
+}

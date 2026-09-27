@@ -1,0 +1,21 @@
+{
+  "series": "GSE335141",
+  "matrix_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE335nnn/GSE335141/suppl/GSE335141_GEO_Upload_normalized_beta_matrix.tsv.gz",
+  "matrix_sha256": "13002634be22d3b58529402b07b89a57610479f18f3208ebd8ce94c6fc12b5b2",
+  "matrix_columns": 82,
+  "GSM_records": 82,
+  "distinct_patient_tokens": 41,
+  "analysis_unit": "one person, one T0 draw",
+  "analyzed_case": 17,
+  "analyzed_control": 24,
+  "probes_seen": 880069,
+  "probes_complete_finite_beta": 880068,
+  "probes_tested": 880068,
+  "fdr_0.05": 0,
+  "top_probe": [
+    "cg05590265_BC21",
+    0.06123869364816792,
+    1.450942619860113e-06
+  ],
+  "caveat": "Exploratory in-cohort probe differences only; no held-out clinical prediction, no cross-study methylation validation, no new disease marker claim."
+}
